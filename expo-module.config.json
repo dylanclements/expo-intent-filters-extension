@@ -1,8 +1,6 @@
 {
   "platforms": ["android"],
   "android": {
-    "modules": [
-      "expo.modules.intentfiltersextension.ExpoIntentFiltersExtensionModule"
-    ]
+    "modules": []
   }
 }
