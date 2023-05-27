@@ -18,11 +18,13 @@
         {
           "action": "VIEW",
           "autoVerify": true,
-          "data": {
-            "scheme": "https",
-            "host": "website.com",
-            "pathPrefix": "/profile"
-          },
+          "data": [
+            {
+              "scheme": "https",
+              "host": "website.com",
+              "pathPrefix": "/profile"
+            }
+          ],
           "category": ["DEFAULT", "BROWSABLE"]
         }
       ],
@@ -40,11 +42,13 @@
             {
               "action": "android.nfc.action.NDEF_DISCOVERED",
               "autoVerify": true,
-              "data": {
-                "scheme": "https",
-                "host": "website.com",
-                "pathPrefix": "/profile"
-              },
+              "data": [
+                {
+                  "scheme": "https",
+                  "host": "website.com",
+                  "pathPrefix": "/profile"
+                }
+              ],
               "category": ["android.intent.category.DEFAULT"]
             }
           ]
