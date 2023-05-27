@@ -38,3 +38,15 @@ as it must follow `android.intent.actions.ACTION_NAME`.
   }
 }
 ```
+Which creates intent filters in AndroidManifest.xml
+```
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="expo.modules.intentfiltersextension.example">
+      ...
+      <intent-filter android:autoVerify="true" data-generated="true">
+        <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+        <data android:scheme="https" android:host="website.com" android:pathPrefix="/profile"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      ...
+</manifest>
+```
