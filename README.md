@@ -1,7 +1,5 @@
 # expo-intent-filters-extension
 
-# Installation
-
 `npx expo install expo-intent-filters-extension`
 
 This is an expo config plugin that provides granular control over android intent filters inside Expo's managed workflow.
