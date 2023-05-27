@@ -20,7 +20,6 @@ as it must follow `android.intent.actions.ACTION_NAME`.
 ```
 {
   "expo": {
-    "name": "expo-intent-filters-extension-example",
     ...
     "plugins": [
       [
