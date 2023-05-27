@@ -26,6 +26,24 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["../app.plugin.js"]
+    "plugins": [
+      [
+        "../app.plugin.js",
+        {
+          "intentFilters": [
+            {
+              "action": "android.nfc.action.NDEF_DISCOVERED",
+              "autoVerify": true,
+              "data": {
+                "scheme": "https",
+                "host": "website.com",
+                "pathPrefix": "/profile"
+              },
+              "category": ["android.intent.category.DEFAULT"]
+            }
+          ]
+        }
+      ]
+    ]
   }
 }
