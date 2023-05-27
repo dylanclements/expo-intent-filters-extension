@@ -1,9 +1,8 @@
 {
-  "platforms": ["ios", "android", "web"],
-  "ios": {
-    "modules": ["ExpoIntentFiltersExtensionModule"]
-  },
+  "platforms": ["android"],
   "android": {
-    "modules": ["expo.modules.intentfiltersextension.ExpoIntentFiltersExtensionModule"]
+    "modules": [
+      "expo.modules.intentfiltersextension.ExpoIntentFiltersExtensionModule"
+    ]
   }
 }
