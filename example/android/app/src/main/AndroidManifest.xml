@@ -28,6 +28,17 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="expo.modules.intentfiltersextension.example"/>
       </intent-filter>
+      <intent-filter android:autoVerify="true" data-generated="true">
+        <action android:name="android.intent.action.VIEW"/>
+        <data android:scheme="https" android:host="website.com" android:pathPrefix="/profile"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+      <intent-filter android:autoVerify="true" data-generated="true">
+        <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+        <data android:scheme="https" android:host="website.com" android:pathPrefix="/profile"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>
   </application>

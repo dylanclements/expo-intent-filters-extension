@@ -14,6 +14,18 @@
     "assetBundlePatterns": ["**/*"],
     "platforms": ["android"],
     "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": {
+            "scheme": "https",
+            "host": "website.com",
+            "pathPrefix": "/profile"
+          },
+          "category": ["DEFAULT", "BROWSABLE"]
+        }
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

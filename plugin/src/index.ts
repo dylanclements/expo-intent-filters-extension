@@ -58,7 +58,7 @@ function addIntentFilters(
   const renderedCurrentIntentFilters =
     AndroidConfig.IntentFilters.default(currentIntentFilters);
 
-  const renderedNewIntentFilters = renderNewIntentFilters(currentIntentFilters);
+  const renderedNewIntentFilters = renderNewIntentFilters(newIntentFilters);
 
   // adds them properly to the manifest
   mainActivity["intent-filter"] = mainActivity["intent-filter"]?.concat(
@@ -108,9 +108,9 @@ function renderIntentFilterData(
 function renderIntentFilterCategory(category: string | string[] | undefined) {
   return (Array.isArray(category) ? category : [category])
     .filter(Boolean)
-    .map((categoroy) => ({
+    .map((category) => ({
       $: {
-        "android:name": `${categoroy}`,
+        "android:name": `${category}`,
       },
     }));
 }
