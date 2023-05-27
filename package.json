@@ -1,7 +1,7 @@
 {
   "name": "expo-intent-filters-extension",
   "version": "0.1.0",
-  "description": "Provide complete control over adding Android intent filters to AndroidManifest.xml",
+  "description": "Provide granular control over adding Android intent filters to AndroidManifest.xml",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
