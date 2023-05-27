@@ -4,8 +4,8 @@
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web"
+    "prebuild": "npx expo prebuild --clean --platform android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "expo": "~48.0.15",
